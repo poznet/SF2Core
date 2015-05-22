@@ -1,0 +1,20 @@
+user_login:
+    pattern: /login
+    defaults: { _controller: CoreBundle:User:login }
+    
+login_check:
+    path: /login_check
+    defaults: { _controller: CoreBundle:User:login }
+
+
+user_check:
+    pattern: /check.htm
+    defaults: { _controller: CoreBundle:User:loginCheck }    
+    
+    
+logout:
+    pattern: /logout.htm
+    defaults: { _controller: CoreBundle:User:logout }        
+
+    
+ 

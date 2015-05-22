@@ -1,0 +1,5 @@
+services:
+    poznet.twig_extension:
+        class: Poznet\CoreBundle\Twig\Extension\FileExistsExtension
+        tags:
+            - { name: twig.extension }

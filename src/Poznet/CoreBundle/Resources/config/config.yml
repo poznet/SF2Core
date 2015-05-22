@@ -1,0 +1,8 @@
+      
+ doctrine:
+    orm:
+       dql:
+            string_functions:
+                 MONTH: Poznet\CoreBundle\Dql\Month
+                 YEAR: Poznet\CoreBundle\Dql\Year    
+                 DAY: Poznet\CoreBundle\Dql\Day
