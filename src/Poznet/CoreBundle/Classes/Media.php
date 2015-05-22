@@ -37,6 +37,12 @@ class Media {
         return self::$mediapath;
     }
     
+     public function getRelativeMediaPath(){
+        $txt=$this->media;
+        $pos=  strpos($txt, 'web/');
+        return substr($txt, $pos+4);
+    }
+    
     public function checkMediaDir(){
          if(!file_exists($this->media)){
                 mkdir($this->media, 0777);
