@@ -18,8 +18,11 @@ class Konfig {
     
     public function __construct(KernelInterface $kernel) {
         $this->kernel=$kernel;
-        $this->configPath=  $this->kernel->get->getRootDir().'/config/parameters-konfig.yml';
-        $this->load();
+        $this->configPath=  $this->kernel->getRootDir().'/config/parameters-konfig.yml';
+        if(file_exists($this->configPath)){
+            $this->load();        
+        }
+            
     }
     
     public function load(){
@@ -35,6 +38,10 @@ class Konfig {
         if(array_key_exists($v,  $this->yml))
         return $this->yml[$v]['value'];
         return null;
+    }
+    
+    public function getAll(){
+        return $this->yml;
     }
     
     public function getDescription($v){
@@ -61,17 +68,9 @@ class Konfig {
   
     public function save(){
         $dumper = new Dumper(); 
-        $yaml = $dumper->dump($this->yml);
-        $path ='../app/config/parameters-kolor.yml'; 
+        $yaml = $dumper->dump($this->yml);       
         file_put_contents($this->configPath, $yaml);
-        $kernel = $this->container->get('kernel');
-        $app = new Application($kernel);
-        $input = new StringInput('cache:clear -e prod ');
-        $output = new StreamOutput(fopen('php://temp', 'w'));
-        $app->doRun($input, $output);
-        $input = new StringInput('cache:clear  ');
-        $output = new StreamOutput(fopen('php://temp', 'w'));
-        $app->doRun($input, $output);
+      
     }
     
 }
