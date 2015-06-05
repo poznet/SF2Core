@@ -1,6 +1,6 @@
 <?php
 
-namespace Poznet\CoreBundle\Classes;
+namespace Poznet\CoreBundle\Services;
 
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Yaml\Dumper;
