@@ -26,17 +26,39 @@ class Konfig {
         $yaml = new Parser();
         $this->yml = $yaml->parse(file_get_contents($this->configPath));         
     }
-    
+ 
+   public function set($n,$v){
+        $this->yml[$n]['value']=$v;
+    }
+     
     public function get($v){
         if(array_key_exists($v,  $this->yml))
-        return $this->yml[$v];
+        return $this->yml[$v]['value'];
         return null;
     }
     
-    public function set($n,$v){
-        $this->yml[$n]=$v;
+    public function getDescription($v){
+        if(array_key_exists($v,  $this->yml))
+            return $this->yml[$v]['desc'];
+        return null;
+    }
+    
+    public function setDescription($n,$v){
+        $this->yml[$n]['desc']=$v;
+    }
+    
+    public function getType($v){
+        if(array_key_exists($v,  $this->yml))
+            return $this->yml[$v]['type'];
+        return null;
+    }
+    
+    public function setType($n,$v){
+        $this->yml[$n]['type']=$v;
     }
 
+    
+  
     public function save(){
         $dumper = new Dumper(); 
         $yaml = $dumper->dump($this->yml);
