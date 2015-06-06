@@ -3,6 +3,7 @@ Symfony 2 Core bundle
 
 Provides basic and  usefull function in  Symfony 2
 
+- [Konfig](docs/konfig.md) - Service for  simple text comfiguration. 
 - Class for media(images,etc) managment
 - Dql Modification that  allow to use date function (Day,Month,Year) in dql
 - Basic Entity for  authentication - compatybile with FOS User Bundle
