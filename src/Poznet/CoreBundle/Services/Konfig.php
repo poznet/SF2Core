@@ -31,7 +31,7 @@ class Konfig {
     }
  
    public function remove($v){
-       unlink($this->yml[$v]);
+       unset($this->yml[$v]);
    }
    
    public function set($n,$v){
