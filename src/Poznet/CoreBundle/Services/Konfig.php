@@ -32,6 +32,7 @@ class Konfig {
  
    public function set($n,$v){
         $this->yml[$n]['value']=$v;
+        $this->yml[$n]['name']=$n;
     }
      
     public function get($v){
