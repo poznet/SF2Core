@@ -21,9 +21,13 @@ After  modificaton of  config  values  you need  to save it
 Each value have  also two other fileds : descripton and  type.
 it can be accessed  by : 
 `getDescription('name');`	
+
 `getType('name');`
+
 `setDescription('name','value');`
+
 `setType('name','value');`
+
 
 Also you  can read  all values  as  array 
 `getAll();`
