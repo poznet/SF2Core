@@ -30,6 +30,10 @@ class Konfig {
         $this->yml = $yaml->parse(file_get_contents($this->configPath));         
     }
  
+   public function remove($v){
+       unlink($this->yml[$v]);
+   }
+   
    public function set($n,$v){
         $this->yml[$n]['value']=$v;
         $this->yml[$n]['name']=$n;
