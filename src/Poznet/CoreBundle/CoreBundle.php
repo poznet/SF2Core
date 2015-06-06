@@ -9,7 +9,7 @@ class CoreBundle extends Bundle
 {
     public function __construct() {
         $media=new Media;
-        $media->checkDir();
+     //   $media->checkDir();
     }
     
 }
