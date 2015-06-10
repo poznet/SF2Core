@@ -13,7 +13,6 @@
     {% stylesheets 
 'assets/bootstrap/dist/css/bootstrap.min.css'
 'assets/font-awesome/css/font-awesome.min.css'
-'@GiercowniaBackendBundle/Resources/private/css/*'  
 'assets/lightbox2/css/lightbox.css'
 'assets/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.css'
 filter='cssrewrite' %}
@@ -85,11 +84,6 @@ filter='cssrewrite' %}
     <label for="inputPassword" class="sr-only" >Password</label>
     <input type="password" id="password" name="_password" class="form-control" placeholder="Hasło" required />
 
-    {#
-        If you want to control the URL the user
-        is redirected to on success (more details below)
-        <input type="hidden" name="_target_path" value="/account" />
-    #}
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>
 </form>
