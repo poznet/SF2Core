@@ -6,14 +6,11 @@ class podpisy {
 	private $dane;
 	private $podpisy;
 	private $linki;
-	private $pliki;
-    private $kernel;
+        private $kernel;
 	
-
     public function __construct($d,$path, $kernel=null){
     	//pliki z katalogu 
         $this->kernel=$kernel;
-    	$this->pliki = array();
         $kat = opendir($path);
         $i = 0;
         while ($n = readdir($kat)) {
