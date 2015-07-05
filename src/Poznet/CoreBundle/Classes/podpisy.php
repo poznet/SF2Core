@@ -14,16 +14,16 @@ class podpisy {
     	//pliki z katalogu 
         $this->kernel=$kernel;
     	$this->pliki = array();
-        $kat = @opendir($path);
+        $kat = opendir($path);
         $i = 0;
-        while ($n = @readdir($kat)) {
+        while ($n = readdir($kat)) {
             if (substr($n, -4) == '.jpg') {
                 $pliki[$i]['path'] = trim($path. $n);
 
                 $i++;
             }
         }
-        @closedir($kat);
+        closedir($kat);
 
     	//
  
