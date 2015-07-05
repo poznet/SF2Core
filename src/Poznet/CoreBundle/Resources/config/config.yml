@@ -1,5 +1,4 @@
-      
- doctrine:
+doctrine:
     orm:
        dql:
             string_functions:
