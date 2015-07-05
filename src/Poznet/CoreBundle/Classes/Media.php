@@ -123,7 +123,7 @@ class Media {
                 
             }
             
-            if($error==null){
+            if($error===null){
                 return '0';
             }else{
                 $session->getFlashBag()->add('notice', $error);
@@ -134,10 +134,10 @@ class Media {
     public function importfromURL($url,$size=null){
         $data=file_get_contents($url);
         $local=$this->media.basename($url);
-        if($size!=null){
+        if($size!==null){
             if(file_exists($local)){
                 $p=filesize($local);
-                if(($p!=false)&&($p!=$size))
+                if(($p!==false)&&($p!=$size))
                     file_put_contents($local,$data);
             }else{
                 file_put_contents($local,$data); 
