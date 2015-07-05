@@ -256,7 +256,7 @@ class user implements AdvancedUserInterface, \Serializable
     public function setRights(Array $rights)
     {
         $this->rights = serialize(array_unique($rights));
-        //var_dump($this->rights);
+         
         return $this;
     }
 
@@ -274,7 +274,7 @@ class user implements AdvancedUserInterface, \Serializable
     public function clearRights()
     {
         $this->rights = serialize(array());
-        //var_dump($this->rights);
+        
         return $this;
     }
 
