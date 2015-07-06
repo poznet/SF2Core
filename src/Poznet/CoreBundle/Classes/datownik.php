@@ -42,4 +42,6 @@ class datownik{
   	public function getImieniny(){
 	   return $this->imieniny;
 	}
+  
 }
+
