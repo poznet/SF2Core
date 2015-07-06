@@ -1,6 +1,8 @@
 # SF2Core
 Symfony 2 Core bundle
 
+[![Build Status](https://travis-ci.org/poznet/SF2Core.svg?branch=master)](https://travis-ci.org/poznet/SF2Core) [![Code Climate](https://codeclimate.com/github/poznet/SF2Core/badges/gpa.svg)](https://codeclimate.com/github/poznet/SF2Core)
+
 Provides basic and  usefull function in  Symfony 2
 
 - [Konfig](doc/konfig.md) - Service for  simple text comfiguration. 
