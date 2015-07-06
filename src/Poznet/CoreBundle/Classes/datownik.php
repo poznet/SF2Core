@@ -2,7 +2,7 @@
 namespace Poznet\CoreBundle\Classes;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Poznet\CoreBundle\Classes\EntityManagerInterface;
 
 class datownik{
 	private $timestamp;
