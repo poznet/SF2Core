@@ -14,7 +14,7 @@ class datownik{
 
 
 
-    public function __construct($em,$timestamp=null){
+    public function __construct(EntityManagerInterface $em,$timestamp=null){
     if(!$timestamp)
     	$timestamp=time();
     $this->timestamp=$timestamp;
