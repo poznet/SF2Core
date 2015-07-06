@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * User
  *
- * @ORM\Table(name="Users")
+ * @ORM\Table(name="sf2core_Users")
  * @ORM\Entity()
  */
 class user implements AdvancedUserInterface, \Serializable
