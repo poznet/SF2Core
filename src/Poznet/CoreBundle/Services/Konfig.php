@@ -5,8 +5,6 @@ namespace Poznet\CoreBundle\Services;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Yaml\Dumper;
 use Symfony\Component\Yaml\Parser;
-use Symfony\Component\Console\Input\StringInput;
-use Symfony\Component\Console\Output\StreamOutput;
 
  
 class Konfig {

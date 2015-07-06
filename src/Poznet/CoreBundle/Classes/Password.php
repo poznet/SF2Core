@@ -6,7 +6,7 @@ namespace Poznet\CoreBundle\Classes;
 class Password  {
 	private $znaki = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
 	private $haslo;
-	private $encoded;
+ 
 
 	public function __construct(){
 		 
