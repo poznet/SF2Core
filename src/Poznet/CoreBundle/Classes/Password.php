@@ -32,18 +32,18 @@ class Password  {
 
        public function checkPasswords($old,$new1,$new2){
            if(strlen($old)<1){
-               $this->komunikat.='Musisz podać aktualne hasło';
+               $this->komunikat.='Musisz podać aktualne hasło<br/>';
                return false;
            }
            
            
            if($new1!=$new2){
-               $this->komunikat.='Niepoprawne powtórzenie Hasła';
+               $this->komunikat.='Niepoprawne powtórzenie Hasła <br/>';
                return false;
            }
            
             if(strlen($new1)<6){
-               $this->komunikat.='Hasło musi mieć minimum 6 znaków';
+               $this->komunikat.='Hasło musi mieć minimum 6 znaków <br/>';
                return false;
            }
            
