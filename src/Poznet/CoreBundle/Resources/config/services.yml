@@ -7,3 +7,7 @@ services:
     konfig:
         class: Poznet\CoreBundle\Services\Konfig
         arguments:    ["@kernel"]
+    
+    log:
+        class: Poznet\CoreBundle\Services\Log
+        arguments:  ["@doctrine.orm.entity_manager","@security.token_storage"]
