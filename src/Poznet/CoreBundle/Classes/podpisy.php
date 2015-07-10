@@ -13,13 +13,12 @@ class podpisy {
         $this->kernel=$kernel;
         $kat = opendir($path);
         $i = 0;
-        while ($n = readdir($kat)) {
-            if (substr($n, -4) == '.jpg') {
-                $pliki[$i]['path'] = trim($path. $n);
-
-                $i++;
-            }
-        }
+//        while ($n = readdir($kat)) {
+//            if (substr($n, -4) == '.jpg') {
+//                $pliki[$i]['path'] = trim($path. $n);
+//                $i++;
+//            }
+//        }
         closedir($kat);
 
     	//
