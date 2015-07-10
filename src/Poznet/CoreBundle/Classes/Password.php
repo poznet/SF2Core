@@ -12,7 +12,7 @@ class Password  {
 
       public function __construct(){
 	 $this->generate();
-                return $haslo.'';
+                return $this->haslo;
        }
        
        public function generate(){           	 
