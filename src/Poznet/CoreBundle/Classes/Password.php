@@ -47,6 +47,8 @@ class Password  {
                return false;
            }
            
+           return true;
+           
            
        }
 
