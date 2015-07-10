@@ -31,6 +31,12 @@ class Password  {
        }
 
        public function checkPasswords($old,$new1,$new2){
+           if(strlen($old)<1){
+               $this->komunikat.='Musisz podać aktualne hasło';
+               return false;
+           }
+           
+           
            if($new1!=$new2){
                $this->komunikat.='Niepoprawne powtórzenie Hasła';
                return false;

@@ -11,17 +11,7 @@ class podpisy {
     public function __construct($d,$path, $kernel=null){
     	//pliki z katalogu 
         $this->kernel=$kernel;
-        $kat = opendir($path);
-        $i = 0;
-//        while ($n = readdir($kat)) {
-//            if (substr($n, -4) == '.jpg') {
-//                $pliki[$i]['path'] = trim($path. $n);
-//                $i++;
-//            }
-//        }
-        closedir($kat);
-
-    	//
+ 
  
 
     	 $this->dane=$d;
