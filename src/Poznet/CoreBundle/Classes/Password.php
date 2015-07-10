@@ -51,6 +51,10 @@ class Password  {
            
            
        }
+       
+       public function getKomunikat(){
+           return $this->komunikat;
+       }
 
 
 }
