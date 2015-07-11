@@ -30,4 +30,12 @@ class Log {
          $this->em->flush();
          return true;
     }
+    
+    
+   public function getCurrentUserLogs(){
+        return $this->em->getRepository("CoreBundle:log")->findByUsername($this->security->getToken()->getUsername());
+    }
+    
+    
+    
 }
