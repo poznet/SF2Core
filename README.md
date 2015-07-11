@@ -17,5 +17,4 @@ Provides basic and  usefull function in  Symfony 2
 in app/AppKernel.php add
 `new Poznet\CoreBundle\CoreBundle($this)`
 Yes  you need add $this (bundle  needs access to  kernel in constructor - to create directory  structure for media)
-
-$this->get('log')->add('$itemtype','1','opis','opis2');
+ 
