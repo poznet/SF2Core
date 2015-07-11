@@ -1,8 +1,8 @@
 <?php
  namespace Poznet\CoreBundle\Twig\Extension;
  
-use \Twig_Filter_Function;
-use \Twig_Filter_Method;
+ 
+ 
  
 class FileExistsExtension extends \Twig_Extension
 {
