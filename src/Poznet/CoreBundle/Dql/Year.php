@@ -14,6 +14,7 @@ namespace Poznet\CoreBundle\Dql;
 use Doctrine\ORM\Query\Lexer;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 /**
+ * "YEAR" "(" SimpleArithmeticExpression ")"
  *
  * @category    DoctrineExtensions
  * @package     DoctrineExtensions\Query\Mysql
@@ -35,7 +36,7 @@ class Year extends FunctionNode
      */
     public function parse(\Doctrine\ORM\Query\Parser $parser)
     {
-      
+        
         $parser->match(Lexer::T_IDENTIFIER);
         $parser->match(Lexer::T_OPEN_PARENTHESIS);
         $this->date = $parser->ArithmeticPrimary();
