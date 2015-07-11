@@ -14,7 +14,6 @@ namespace Poznet\CoreBundle\Dql;
 use Doctrine\ORM\Query\Lexer;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 /**
- * "YEAR" "(" SimpleArithmeticExpression ")"
  *
  * @category    DoctrineExtensions
  * @package     DoctrineExtensions\Query\Mysql
