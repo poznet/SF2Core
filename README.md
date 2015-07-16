@@ -2,6 +2,7 @@
 Symfony 2 Core bundle
 
 [![Build Status](https://travis-ci.org/poznet/SF2Core.svg?branch=master)](https://travis-ci.org/poznet/SF2Core) [![Code Climate](https://codeclimate.com/github/poznet/SF2Core/badges/gpa.svg)](https://codeclimate.com/github/poznet/SF2Core)
+
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/3058f2ea-9779-4136-935a-cb99bfb98ea8/big.png)](https://insight.sensiolabs.com/projects/3058f2ea-9779-4136-935a-cb99bfb98ea8)
 
 Provides basic and  usefull function in  Symfony 2
