@@ -14,7 +14,9 @@ user_check:
     
 logout:
     pattern: /logout.htm
-    defaults: { _controller: CoreBundle:User:logout }        
+    defaults: { _controller: CoreBundle:User:logout }  
+          
 
     
- 
+    
+    

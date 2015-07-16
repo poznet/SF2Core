@@ -1,8 +1,8 @@
 {
-    "name": "poznet/SF2Core",
+    "name": "poznet/sf2core",
     "description": "Symfony 2 Core Bundle ( Bundle  with useful  tools ) ",
     "homepage": "https://github.com/poznet/SF2Core",
-    "version": "0.0.1",
+    "license": "MIT",
     
     "require": {
         "php": ">=5.3",
