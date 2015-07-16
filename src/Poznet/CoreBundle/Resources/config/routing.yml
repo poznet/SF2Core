@@ -2,7 +2,3 @@ user_index:
     resource: "@CoreBundle/Resources/config/routing/main.yml"
     
  
-    
- 
-    
- 
