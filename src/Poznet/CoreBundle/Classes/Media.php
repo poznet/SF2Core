@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class Media {
     protected $media;
     public static $mediapath='../web/media';
-    private $podzial=array('/gry',
+    private $podzial=array('',
         );
  
     

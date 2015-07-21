@@ -11,3 +11,7 @@ services:
     log:
         class: Poznet\CoreBundle\Services\Log
         arguments:  ["@doctrine.orm.entity_manager","@security.token_storage"]
+        
+    pozet.mediacontainer:
+        class: Poznet\CoreBundle\Services\MediaContainer
+        arguments:  ["@AppKernel"]

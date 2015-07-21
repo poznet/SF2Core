@@ -47,9 +47,7 @@ class Konfig {
         return $this->yml;
     }
     
-     public function getAllWithType($type){
-        return $this->yml;
-    }
+ 
     
     public function getDescription($v){
         if(array_key_exists($v,  $this->yml))
