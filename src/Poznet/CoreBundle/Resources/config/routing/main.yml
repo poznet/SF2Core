@@ -1,5 +1,5 @@
 user_login:
-    pattern: /login
+    path: /login
     defaults: { _controller: CoreBundle:User:login }
     
 login_check:
@@ -8,12 +8,12 @@ login_check:
 
 
 user_check:
-    pattern: /check.htm
+    path: /check.htm
     defaults: { _controller: CoreBundle:User:loginCheck }    
     
     
 logout:
-    pattern: /logout.htm
+    path: /logout.htm
     defaults: { _controller: CoreBundle:User:logout }  
           
 
