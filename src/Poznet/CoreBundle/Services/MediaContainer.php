@@ -15,13 +15,13 @@ namespace Poznet\CoreBundle\Services;
  */
 class MediaContainer {
     //put your code here
-    private $kernel;
+    private $rootdir;
     
-    public function __construct(AppKernel $kernel) {
-        $this->kernel=$kernel;
+    public function __construct($rootdit) {
+        $this->rootdir=$rootdit;
     }
     
     public function getWeb(){
-        return $this->kernel->getRootDir().'/../web';
+        return $this->rootdir.'/../web';
     }
 }

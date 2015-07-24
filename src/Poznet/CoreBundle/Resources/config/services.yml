@@ -14,4 +14,4 @@ services:
         
     pozet.mediacontainer:
         class: Poznet\CoreBundle\Services\MediaContainer
-        arguments:  ["@AppKernel"]
+        arguments:  [%kernel.root_dir%]
