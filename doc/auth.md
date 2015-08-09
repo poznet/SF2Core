@@ -6,6 +6,12 @@ Symfony 2 Core bundle
 - Update database shemma (dapp/console :s:u  --force)
 - configure security
 
+Add to routing.yml :
+```
+core_user:
+    resource: "@CoreBundle/Resources/config/routing.yml"
+    prefix:   /panel/
+```
 
 #### Customizing  login view
 Overrite existing login  view by  placing it in file : 
