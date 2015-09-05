@@ -29,6 +29,7 @@ class CreateAdminCommand extends ContainerAwareCommand {
                 $user->setPassword($encoded);
                 $user->setEmail('me@me.com');
                 $user->setUsername('admin');
+                $em->persist($user);
                 $em->flush();
             } catch(\RuntimeException $e) {
           //its  very  lame :)
