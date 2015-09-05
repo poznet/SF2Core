@@ -35,7 +35,7 @@ class CreateAdminCommand extends ContainerAwareCommand {
         
             }    
             
-            $output->writeln('Konto Za³o¿one');
+            $output->writeln('Konto ZaÅ‚oÅ¼one');
         }else{
             $output->writeln('Admin Juz Istnieje ');
         }
