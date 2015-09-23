@@ -10,7 +10,7 @@ Provides basic and  usefull function in  Symfony 2
 - [Konfig](doc/konfig.md) - Service for  simple text comfiguration. 
 - Class for media(images,etc) managment
 - Dql Modification that  allow to use date function (Day,Month,Year) in dql
-- [Basic authentication](doc/auth.md) - boased on FOS User Bundle
+- [Basic authentication](doc/auth.md) - based on FOS User Bundle
 - Controller and Twig for  basic  user authentication
 - Twig extension  that gives file_exists function in  twig
 - [Simple Logger service](doc/logger.md) - Simple service for logging operation
